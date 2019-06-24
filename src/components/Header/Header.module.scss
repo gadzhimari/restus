@@ -1,0 +1,15 @@
+@import '../../styles/vars';
+
+.header {
+  height: $headerHeight;
+  background-color: $gray-700;
+}
+
+.wrapper {
+  padding-right: 16px;
+  padding-left: 16px;
+  display: flex;
+  height: inherit;
+  justify-content: space-between;
+  align-items: center;
+}

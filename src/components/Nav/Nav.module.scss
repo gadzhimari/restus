@@ -1,0 +1,19 @@
+@import '../../styles/vars';
+
+.nav {
+  display: flex;
+}
+
+.link {
+  margin-left: 32px;
+  font-family: 'ProximaNova', serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $linkColor;
+
+  &.active {
+    color: $linkActiveColor;
+  }
+}
