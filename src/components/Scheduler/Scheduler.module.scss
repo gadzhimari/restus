@@ -1,0 +1,104 @@
+@import '../../styles/vars';
+
+.scheduler {
+  overflow: scroll;
+  height: 670px;
+}
+
+.table {
+  position: relative;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.col {
+  padding: 9px 5px;
+  flex: 0 0 auto;
+}
+
+.tableId {
+  font-family: 'ProximaNova', serif;
+  font-size: 29px;
+  font-weight: 700;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.tableTitle {
+  display: table;
+}
+
+.tableTitleOuter {
+  padding: 50% 13px;
+  height: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #808080;
+}
+
+.tableTitleInner {
+  margin-top: -50%;
+  white-space: nowrap;
+  transform: rotate(-90deg) translate(-100%);
+  transform-origin: top left;
+}
+
+th {
+  position: sticky;
+  z-index: 2;
+  top: -1px;
+  height: 30px;
+  background-color: #2f2e31;
+
+  &:first-of-type {
+    z-index: 3;
+  }
+}
+
+tbody tr:first-of-type td {
+  padding-top: 12px;
+}
+
+.tableContainer {
+  margin-right: 10px;
+  padding-top: 16px;
+  height: 290px;
+  background-color: rgb(47, 46, 49);
+}
+
+.stickyCol {
+  position: sticky;
+  z-index: 2;
+  left: -1px;
+  padding: 0 !important;
+  max-width: 50px;
+}
+
+.day {
+  margin: 0 5px;
+  padding-left: 4px;
+  display: flex;
+  width: 140px;
+  flex: 0 0 auto;
+  opacity: 0.8;
+  font-family: 'ProximaNova', serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: $white;
+}
+
+.today {
+  position: relative;
+  padding-left: 16px;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    width: 8px;
+    height: 8px;
+    content: '';
+    background-color: #e8ce4d;
+    border-radius: 50%;
+    transform: translate(-16px, -50%);
+  }
+}

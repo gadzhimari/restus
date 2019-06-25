@@ -1,11 +1,15 @@
 import React from 'react';
-import { Header } from './components';
+import { Header, Scheduler } from './components';
+import { events, tables } from './data/data';
 import './App.scss';
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <div className="container">
+        <Header />
+        <Scheduler events={events} tables={tables} />
+      </div>
     </div>
   );
 }

@@ -1,0 +1,93 @@
+@import '../../styles/vars';
+
+.card {
+  width: 140px;
+  background-color: $gray-700;
+  border-radius: 4px;
+}
+
+.header {
+  position: relative;
+  padding: 8px 0 6px 18px;
+  display: flex;
+  border-bottom: 1px solid #414042;
+}
+
+.status {
+  display: flex;
+  font-family: 'ProximaNova', serif;
+  font-weight: 700;
+}
+
+.value {
+  font-size: 40px;
+  color: inherit;
+}
+
+.percent {
+  margin: 8px 0 0 4px;
+  font-size: 10px;
+  color: $white;
+}
+
+.more {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  padding: 10px;
+  display: inline-block;
+  font-size: 18px;
+  color: #808080;
+  transform: rotate(-90deg);
+  cursor: pointer;
+}
+
+.body {
+  padding: 4px 8px;
+}
+
+.timeSlots {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.timeSlot {
+  margin-bottom: 4px;
+  padding: 8px 0;
+  width: 50%;
+  opacity: 0.7;
+  font-family: 'ProximaNova', serif;
+  font-size: 13px;
+  text-align: center;
+  color: $white;
+
+  &:nth-last-of-type(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
+.booked {
+  opacity: 0.3;
+  background-color: $gray-800;
+  border-radius: 2px;
+}
+
+.red {
+  color: #e8614d;
+}
+
+.orange {
+  color: #e8944d;
+}
+
+.yellow {
+  color: #e8ce4d;
+}
+
+.green {
+  color: #9be84d;
+}
+
+.white {
+  color: #c1c1c2;
+}
