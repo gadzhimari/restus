@@ -5,6 +5,8 @@
   ],
   "plugins": [
     "stylelint-scss",
+    "stylelint-at-rule-no-children",
+    "stylelint-declaration-block-no-ignored-properties",
     "stylelint-order",
   ],
   "rules": {

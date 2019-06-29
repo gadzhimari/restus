@@ -5,6 +5,8 @@
 }
 
 .link {
+  display: inline;
+  width: 100px;
   margin-left: 32px;
   text-decoration: none;
   text-transform: uppercase;
@@ -15,5 +17,16 @@
 
   &.active {
     color: $linkActiveColor;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .link {
+    color: yellow;
+  }
+
+  .nav {
+    width: 600px;
+    color: red;
   }
 }
